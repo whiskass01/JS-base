@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <h1></h1>
-   <input type="text" id="taskInput" placeholder=""> 
-   <button onclick="addTask()"></button>
+   <h1>Список задач</h1>
+   <input type="text" id="taskInput" placeholder="Добавите новую задачу"> 
+   <button onclick="addTask()">Добавить задачу</button>
    <span></span>
-   <select id="filterInput" size="1" oninput="filterTasks()"></select>
+   <select id="filterInput" size="1" oninput="filterTasks()">Фильтр задач
+    <option value = "">Показать все</option>
+		<option value = "Выполнено" >Показать выполненные</option>
+		<option value = "Не выполнено">Показать невыполненные</option>
+   </select>
    <ul id="taskList"></ul>
    <script src="js/script.js"></script>
 </body>
